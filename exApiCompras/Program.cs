@@ -13,6 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+builder.Services.AddScoped<IPedidoRepositorio, PedidoRepositorio>();
 
 builder.Services.AddDbContext<SistemasComprasDBContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"))

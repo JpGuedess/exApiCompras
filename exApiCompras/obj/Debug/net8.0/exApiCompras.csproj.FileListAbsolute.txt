@@ -135,3 +135,4 @@ C:\Users\SENAI3EM\Desktop\API\exApiCompras\exApiCompras\obj\Debug\net8.0\refint\
 C:\Users\SENAI3EM\Desktop\API\exApiCompras\exApiCompras\obj\Debug\net8.0\exApiCompras.pdb
 C:\Users\SENAI3EM\Desktop\API\exApiCompras\exApiCompras\obj\Debug\net8.0\exApiCompras.genruntimeconfig.cache
 C:\Users\SENAI3EM\Desktop\API\exApiCompras\exApiCompras\obj\Debug\net8.0\ref\exApiCompras.dll
+C:\Users\SENAI3EM\Desktop\API\exApiCompras\exApiCompras\obj\Debug\net8.0\exApiCompras.sourcelink.json
