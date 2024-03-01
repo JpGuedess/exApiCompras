@@ -7,50 +7,50 @@ namespace exApiCompras.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class PedidoController : ControllerBase
+    public class ProdutoController : ControllerBase
     {
-        private readonly IPedidoRepositorio _pedidoRepositorio;
+        private readonly IProdutoRepositorio _produtoRepositorio;
 
-        public PedidoController(IPedidoRepositorio pedidoRepositorio)
+        public ProdutoController(IProdutoRepositorio produtoRepositorio)
         {
-            _pedidoRepositorio = pedidoRepositorio;
+            _produtoRepositorio = produtoRepositorio;
         }
 
         [HttpPost]
-        public async Task<ActionResult<PedidoModels>> Create([FromBody] PedidoModels pedidoModels)
+        public async Task<ActionResult<ProdutoModels>> Create([FromBody] ProdutoModels produtoModels)
         {
-            PedidoModels pedido = await _pedidoRepositorio.Create(pedidoModels);
-            return Ok(pedido);
+            ProdutoModels produto = await _produtoRepositorio.Create(produtoModels);
+            return Ok(produto);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<PedidoModels>> Read(int id)
+        public async Task<ActionResult<ProdutoModels>> Read(int id)
         {
-            PedidoModels pedido = await _pedidoRepositorio.Read(id);
+            ProdutoModels produto = await _produtoRepositorio.Read(id);
 
-            return Ok(pedido);
+            return Ok(produto);
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult<PedidoModels>> Update(int id, [FromBody] PedidoModels pedidoModels)
+        public async Task<ActionResult<ProdutoModels>> Update(int id, [FromBody] ProdutoModels produtoModels)
         {
-            pedidoModels.Id = id;
-            PedidoModels pedido = await _pedidoRepositorio.Update(pedidoModels, id);
-            return Ok(pedido);
+            produtoModels.Id = id;
+            ProdutoModels produto = await _produtoRepositorio.Update(produtoModels, id);
+            return Ok(produto);
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<PedidoModels>> Delete(int id)
+        public async Task<ActionResult<ProdutoModels>> Delete(int id)
         {
-            bool apagado = await _pedidoRepositorio.Delete(id);
+            bool apagado = await _produtoRepositorio.Delete(id);
             return Ok(apagado);
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<PedidoModels>>> ReadAll()
+        public async Task<ActionResult<List<ProdutoModels>>> ReadAll()
         {
-            List<PedidoModels> pedidos = await _pedidoRepositorio.ReadAll();
-            return Ok(pedidos);
+            List<ProdutoModels> produtos = await _produtoRepositorio.ReadAll();
+            return Ok(produtos);
         }
     }
 }

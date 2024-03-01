@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("exApiCompras")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+900596bee49bb8b8f66c3a98f4f8baf2949fd04d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68c163617750778e169a6b34b4cae7b45436d04c")]
 [assembly: System.Reflection.AssemblyProductAttribute("exApiCompras")]
 [assembly: System.Reflection.AssemblyTitleAttribute("exApiCompras")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

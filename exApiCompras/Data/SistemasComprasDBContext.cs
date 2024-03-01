@@ -10,6 +10,7 @@ namespace exApiCompras.Data
         public DbSet<UsuarioModels> Usuarios { get; set; }
         public DbSet<PedidoModels> Pedidos { get; set; }
         public DbSet<CategoriaModels> Categorias { get; set; }
+        public DbSet<ProdutoModels> Produtos { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

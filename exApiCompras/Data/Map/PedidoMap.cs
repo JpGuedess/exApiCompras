@@ -4,15 +4,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace exApiCompras.Data.Map
 {
-    public class PedidoMap : IEntityTypeConfiguration<PedidoModels>
+    public class ProdutoMap : IEntityTypeConfiguration<ProdutoModels>
     {
-        public void Configure(EntityTypeBuilder<PedidoModels> builder)
+        public void Configure(EntityTypeBuilder<ProdutoModels> builder)
         {
             builder.HasKey(x => x.Id);
-            builder.Property(x => x.UsuarioId).IsRequired();
-            builder.Property(x => x.EnderecoEntrega).IsRequired().HasMaxLength(255);
-
-            builder.HasOne(x => x.Usuario);
+            builder.Property(x => x.Nome).IsRequired().HasMaxLength(255);
+            builder.Property(x => x.Descricao).IsRequired().HasMaxLength(255);
+            builder.Property(x => x.Preco).IsRequired().HasMaxLength(255);
 
         }
     }
