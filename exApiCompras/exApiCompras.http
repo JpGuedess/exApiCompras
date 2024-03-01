@@ -1,0 +1,6 @@
+@exApiCompras_HostAddress = http://localhost:5069
+
+GET {{exApiCompras_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
