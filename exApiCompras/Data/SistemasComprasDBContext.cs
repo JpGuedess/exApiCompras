@@ -9,6 +9,7 @@ namespace exApiCompras.Data
         public SistemasComprasDBContext(DbContextOptions<SistemasComprasDBContext> options) : base(options) { }
         public DbSet<UsuarioModels> Usuarios { get; set; }
         public DbSet<PedidoModels> Pedidos { get; set; }
+        public DbSet<CategoriaModels> Categorias { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
