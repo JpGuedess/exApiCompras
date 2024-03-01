@@ -16,6 +16,7 @@ builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 builder.Services.AddScoped<IPedidoRepositorio, PedidoRepositorio>();
 builder.Services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
 builder.Services.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
+builder.Services.AddScoped<IPedidosProdutosRepositorio, PedidosProdutosRepositorio>();
 
 builder.Services.AddDbContext<SistemasComprasDBContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"))
